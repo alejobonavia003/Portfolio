@@ -1,0 +1,293 @@
+tailwind-landing-page-template
+│── .git
+│   │── config
+│   │── description
+│   │── HEAD
+│   │── hooks
+│   │   │── applypatch-msg.sample
+│   │   │── commit-msg.sample
+│   │   │── fsmonitor-watchman.sample
+│   │   │── post-update.sample
+│   │   │── pre-applypatch.sample
+│   │   │── pre-commit.sample
+│   │   │── pre-merge-commit.sample
+│   │   │── pre-push.sample
+│   │   │── pre-rebase.sample
+│   │   │── pre-receive.sample
+│   │   │── prepare-commit-msg.sample
+│   │   │── push-to-checkout.sample
+│   │   │── sendemail-validate.sample
+│   │   └── update.sample
+│   │── index
+│   │── info
+│   │   └── exclude
+│   │── logs
+│   │   │── HEAD
+│   │   └── refs
+│   │       │── heads
+│   │       │   └── main
+│   │       └── remotes
+│   │           └── origin
+│   │               └── HEAD
+│   │── objects
+│   │   │── info
+│   │   └── pack
+│   │       │── pack-c4e82917ed1157f554620a45a58e9ec04345c2b4.idx
+│   │       │── pack-c4e82917ed1157f554620a45a58e9ec04345c2b4.pack
+│   │       └── pack-c4e82917ed1157f554620a45a58e9ec04345c2b4.rev
+│   │── packed-refs
+│   └── refs
+│       │── heads
+│       │   └── main
+│       │── remotes
+│       │   └── origin
+│       │       └── HEAD
+│       └── tags
+│── .gitignore
+│── .next
+│   │── app-build-manifest.json
+│   │── build-manifest.json
+│   │── cache
+│   │   │── .rscinfo
+│   │   │── images
+│   │   │   │── 99lE6BFfBFQg0fRKROSlttYAER60LW9t-Ugewa8JGZE
+│   │   │   │   └── 60.1762300987439.1fxiQsBXt4bDhjo89U4JiMKL5AkW4GCcXjM_MLc-Ts4.Vy8iZDMyLTE5YTUxNTIwZGRmIg.webp
+│   │   │   │── AXCrrh_HNshYc3nWob5zg7eSH3DTfgl-W3_9yJesEko
+│   │   │   │   └── 60.1762300987601.coSgV5Vw5EGcXWGNokrWZc1VaRmrPQFS9rQY-aU2F90.Vy8iNDhkYy0xOWE1MTUyMGRlMyI.webp
+│   │   │   │── bAOOc_NmvkmW5--vPABDrWsLjWRFQtC9F-dFlzX-nu0
+│   │   │   │   └── 60.1762300987429.4MGHYS1zSUeGZiIbOq8FlOc0mu8bPBHMvrJSCz2HFp4.Vy8iN2ExLTE5YTUxNTIwZGRmIg.webp
+│   │   │   │── ehqLnZpTy0b3eeoG7JXrbXELH-F8vQZK5RwY7S_NYcY
+│   │   │   │   └── 60.1762300987585.qDbTo-GoNRb3i61fiRjReLv86Z0-Thop6_jXXgoJiME.Vy8iNDkxMS0xOWE1MTUyMGRkZiI.webp
+│   │   │   │── GQ_6S1ZUJrp_vNvevS6YXGa2soProz9GEM07Qq2JKt0
+│   │   │   │   └── 60.1762300987396.NjFpf0-Gzsbu1kUxB79qyMrxmoMArl_UsfYJ0l_rqFg.Vy8iYWMyLTE5YTUxNTIwZGRmIg.webp
+│   │   │   │── GreB9ZWuKE_q8bsvTZ_t8lv1C-4MExMymcqhpcPXq94
+│   │   │   │   └── 60.1762300999031.xUQ9i8panJe4lTkjyRgFmiDK28ALK1t6gfA88SHylFA.Vy8iMmIyMi0xOWE1MTUyMGRlNSI.webp
+│   │   │   │── MElFbE9ku34vfda6UZtILTgsbyCIKdqgyw-A95ljo8s
+│   │   │   │   └── 60.1762300987443.eYyR0IccUjUFbKERU6TEa2Xq0smwgCgDmy55ng_Mihk.Vy8iZTIzLTE5YTUxNTIwZGRmIg.webp
+│   │   │   │── Mi92o1w9QRTrC5rXttNhWsVbUytEHt4U95rBEK2UfaY
+│   │   │   │   └── 60.1762300987657.a7EI7oi2pbvyJ1g0iJqeneY-VnyDyyjoOhYD9jd8IC8.Vy8iM2EzOC0xOWE1MTUyMGRkZiI.webp
+│   │   │   │── swnDjh4B_3rG8UWwpZyCrlUeKHKN4FI06M1LQtBE7yo
+│   │   │   │   └── 60.1762300987568.mTJKsSO4ysrJHHpzjLzqDIv3SNXTeWC4c6sJhrkAu3g.Vy8iNDc4MC0xOWE1MTUyMGRlMyI.webp
+│   │   │   │── XMSzY5PNQh0MLrLliG1oIZGr46ol8abHWChWUi51m6w
+│   │   │   │   └── 60.1762300987390.W4A_dS64myybPzAdDr6_9wBzhNaBgmpyp5JOnfHzVOg.Vy8iOTA2LTE5YTUxNTIwZGRmIg.webp
+│   │   │   │── yfbAM19i7I65onaMUJKwYm0ZJK4xc5MCpv8zf56B-Hc
+│   │   │   │   └── 60.1762300987456.P9cWU9vK45wS1udGo31x6lgjhWrpvzt5Dme-vfHNXiw.Vy8iZGZmLTE5YTUxNTIwZGRmIg.webp
+│   │   │   └── ZraZRCVs6k-g_4pEGuNWlqNJsobQajvREgk12rns2rk
+│   │   │       └── 60.1762300987565.MECMzMXqYAT56XFXKcx8ITAV3_vWTu1HL57urTjsejs.Vy8iNDI1Ni0xOWE1MTUyMGRkZiI.webp
+│   │   │── next-devtools-config.json
+│   │   │── swc
+│   │   │   └── plugins
+│   │   │       └── windows_x86_64_18.0.0
+│   │   └── webpack
+│   │       │── client-development
+│   │       │   │── 0.pack.gz
+│   │       │   │── 1.pack.gz
+│   │       │   │── 2.pack.gz
+│   │       │   │── index.pack.gz
+│   │       │   └── index.pack.gz.old
+│   │       └── server-development
+│   │           │── 0.pack.gz
+│   │           │── 1.pack.gz
+│   │           │── index.pack.gz
+│   │           └── index.pack.gz.old
+│   │── package.json
+│   │── prerender-manifest.json
+│   │── react-loadable-manifest.json
+│   │── routes-manifest.json
+│   │── server
+│   │   │── app
+│   │   │   │── (auth)
+│   │   │   │   │── reset-password
+│   │   │   │   │   │── page.js
+│   │   │   │   │   └── page_client-reference-manifest.js
+│   │   │   │   │── signin
+│   │   │   │   │   │── page.js
+│   │   │   │   │   └── page_client-reference-manifest.js
+│   │   │   │   └── signup
+│   │   │   │       │── page.js
+│   │   │   │       └── page_client-reference-manifest.js
+│   │   │   └── (default)
+│   │   │       │── page.js
+│   │   │       └── page_client-reference-manifest.js
+│   │   │── app-paths-manifest.json
+│   │   │── interception-route-rewrite-manifest.js
+│   │   │── middleware-build-manifest.js
+│   │   │── middleware-manifest.json
+│   │   │── middleware-react-loadable-manifest.js
+│   │   │── next-font-manifest.js
+│   │   │── next-font-manifest.json
+│   │   │── pages-manifest.json
+│   │   │── server-reference-manifest.js
+│   │   │── server-reference-manifest.json
+│   │   │── vendor-chunks
+│   │   │   │── aos.js
+│   │   │   │── lodash.debounce.js
+│   │   │   │── lodash.throttle.js
+│   │   │   └── next.js
+│   │   └── webpack-runtime.js
+│   │── static
+│   │   │── chunks
+│   │   │   │── app
+│   │   │   │   │── (auth)
+│   │   │   │   │   │── layout.js
+│   │   │   │   │   │── reset-password
+│   │   │   │   │   │   └── page.js
+│   │   │   │   │   │── signin
+│   │   │   │   │   │   └── page.js
+│   │   │   │   │   └── signup
+│   │   │   │   │       └── page.js
+│   │   │   │   │── (default)
+│   │   │   │   │   │── layout.js
+│   │   │   │   │   └── page.js
+│   │   │   │   └── layout.js
+│   │   │   │── app-pages-internals.js
+│   │   │   │── main-app.js
+│   │   │   │── polyfills.js
+│   │   │   │── webpack.js
+│   │   │   └── _app-pages-browser_node_modules_next_dist_client_dev_noop-turbopack-hmr_js.js
+│   │   │── css
+│   │   │   └── app
+│   │   │       │── (default)
+│   │   │       │   └── layout.css
+│   │   │       └── layout.css
+│   │   │── development
+│   │   │   │── _buildManifest.js
+│   │   │   └── _ssgManifest.js
+│   │   │── media
+│   │   │   │── 19cfc7226ec3afaa-s.woff2
+│   │   │   │── 21350d82a1f187e9-s.woff2
+│   │   │   │── 8e9860b6e62d6359-s.woff2
+│   │   │   │── auth-bg.d5c5ddd9.svg
+│   │   │   │── avatar-01.db6e576c.jpg
+│   │   │   │── avatar-02.48b3bd4a.jpg
+│   │   │   │── avatar-03.8cf37f63.jpg
+│   │   │   │── avatar-04.cb374aa5.jpg
+│   │   │   │── avatar-05.4e3d4b89.jpg
+│   │   │   │── avatar-06.381445dd.jpg
+│   │   │   │── ba9851c3c22cd980-s.woff2
+│   │   │   │── c5fe6dc8356a8c31-s.woff2
+│   │   │   │── df0a9ae256c0569c-s.woff2
+│   │   │   │── e4af272ccee01ff0-s.p.woff2
+│   │   │   │── large-testimonial.17203d4e.jpg
+│   │   │   │── logo-01.2afb72f2.svg
+│   │   │   │── logo-02.7c700869.svg
+│   │   │   │── logo-03.52ad3621.svg
+│   │   │   │── logo-04.701f1a61.svg
+│   │   │   │── logo-05.1dad5ee4.svg
+│   │   │   │── logo-06.4b7bdc91.svg
+│   │   │   │── logo-07.a90ef101.svg
+│   │   │   │── logo-08.0597a069.svg
+│   │   │   │── logo-09.0d1e4d78.svg
+│   │   │   │── planet-overlay.07231ad5.svg
+│   │   │   │── planet-tag-01.1c563326.png
+│   │   │   │── planet-tag-02.cbaf9d73.png
+│   │   │   │── planet-tag-03.6057d1a7.png
+│   │   │   │── planet-tag-04.ba190d7b.png
+│   │   │   │── planet.598decf6.png
+│   │   │   │── stripes-dark.1d30c8fa.svg
+│   │   │   └── stripes.56c3aef5.svg
+│   │   └── webpack
+│   │       │── 3780eba6a2199cbb.webpack.hot-update.json
+│   │       │── 633457081244afec._.hot-update.json
+│   │       │── 88e8708dba7858b5.webpack.hot-update.json
+│   │       │── app
+│   │       │   └── layout.efeece45f21af347.hot-update.js
+│   │       │── efeece45f21af347.webpack.hot-update.json
+│   │       │── webpack.3780eba6a2199cbb.hot-update.js
+│   │       │── webpack.88e8708dba7858b5.hot-update.js
+│   │       └── webpack.efeece45f21af347.hot-update.js
+│   │── trace
+│   └── types
+│       │── app
+│       │   │── (auth)
+│       │   │   │── layout.ts
+│       │   │   │── reset-password
+│       │   │   │   └── page.ts
+│       │   │   │── signin
+│       │   │   │   └── page.ts
+│       │   │   └── signup
+│       │   │       └── page.ts
+│       │   │── (default)
+│       │   │   │── layout.ts
+│       │   │   └── page.ts
+│       │   └── layout.ts
+│       │── cache-life.d.ts
+│       │── package.json
+│       │── routes.d.ts
+│       └── validator.ts
+│── .vscode
+│   └── settings.json
+│── app
+│   │── (auth)
+│   │   │── layout.tsx
+│   │   │── reset-password
+│   │   │   └── page.tsx
+│   │   │── signin
+│   │   │   └── page.tsx
+│   │   └── signup
+│   │       └── page.tsx
+│   │── (default)
+│   │   │── layout.tsx
+│   │   └── page.tsx
+│   │── api
+│   │   └── hello
+│   │       └── route.ts
+│   │── css
+│   │   │── additional-styles
+│   │   │   │── custom-fonts.css
+│   │   │   │── theme.css
+│   │   │   └── utility-patterns.css
+│   │   └── style.css
+│   └── layout.tsx
+│── CHANGELOG.md
+│── components
+│   │── accordion.tsx
+│   │── banner.tsx
+│   │── business-categories.tsx
+│   │── cta.tsx
+│   │── features-planet.tsx
+│   │── hero-home.tsx
+│   │── large-testimonial.tsx
+│   │── page-illustration.tsx
+│   └── ui
+│       │── footer.tsx
+│       │── header.tsx
+│       └── logo.tsx
+│── next
+│── next-env.d.ts
+│── next.config.js
+│── package-lock.json
+│── package.json
+│── pnpm-lock.yaml
+│── postcss.config.js
+│── public
+│   │── favicon.ico
+│   └── images
+│       │── auth-bg.svg
+│       │── avatar-01.jpg
+│       │── avatar-02.jpg
+│       │── avatar-03.jpg
+│       │── avatar-04.jpg
+│       │── avatar-05.jpg
+│       │── avatar-06.jpg
+│       │── large-testimonial.jpg
+│       │── logo-01.svg
+│       │── logo-02.svg
+│       │── logo-03.svg
+│       │── logo-04.svg
+│       │── logo-05.svg
+│       │── logo-06.svg
+│       │── logo-07.svg
+│       │── logo-08.svg
+│       │── logo-09.svg
+│       │── planet-overlay.svg
+│       │── planet-tag-01.png
+│       │── planet-tag-02.png
+│       │── planet-tag-03.png
+│       │── planet-tag-04.png
+│       │── planet.png
+│       │── stripes-dark.svg
+│       └── stripes.svg
+│── README.md
+│── simple-next@0.1.0
+└── tsconfig.json
