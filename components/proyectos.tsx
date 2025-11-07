@@ -5,7 +5,8 @@ const proyectos = [
       "Proyecto académico hecho en Java + Spark + JDBC + Mustache. Permite administrar estudiantes, materias y docentes.",
     stack: ["Java", "Spark", "JDBC", "Mustache"],
     img: "/proyecto_universidad.png",
-    link: "https://github.com/alejobonavia003/SISTEMA-DE-GESTION-ESTUDIANTIL",
+    link: "https://github.com/alejobonavia003/GestionUniversitaria",
+    webLink: "En proceso",
   },
   {
     nombre: "Mantis Espacio Terapéutico",
@@ -14,6 +15,7 @@ const proyectos = [
     stack: ["React", "Node.js", "Express", "Railway"],
     img: "/Mantis.png",
     link: "https://github.com/alejobonavia003/Mantis",
+    webLink: "https://mantisespacioterapeutico.com/",
   },
 ];
 
@@ -26,7 +28,9 @@ export default function Proyectos() {
           {proyectos.map((p) => (
             <div key={p.nombre} className="bg-gray-800/60 rounded-xl p-5 border border-gray-700 hover:border-blue-600 transition">
               <img src={p.img} alt={p.nombre} className="rounded-md mb-4 w-full h-48 object-cover" />
-              <h3 className="text-lg font-semibold text-white">{p.nombre}</h3>
+              <h3 className="text-lg font-semibold text-white">
+                <a href={p.webLink} target="_blank" className="hover:text-blue-400 transition">{p.nombre}</a>
+              </h3>
               <p className="text-gray-400 text-sm mt-2 mb-3">{p.descripcion}</p>
               <div className="flex flex-wrap gap-2 mb-3">
                 {p.stack.map((tech) => (
