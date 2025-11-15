@@ -20,7 +20,6 @@ export default function Home() {
       <main>
         <Inicio />
         <SobreMi />
-        <Habilidades />
         <Proyectos />
         <Formacion />
         <Contacto />
