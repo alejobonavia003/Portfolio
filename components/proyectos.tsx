@@ -1,12 +1,14 @@
 const proyectos = [
   {
-    nombre: "Sistema de Gestión Universitaria",
+    nombre: "ecomerce Imperio Sur",
     descripcion:
-      "Proyecto académico hecho en Java + Spark + JDBC + Mustache. Permite administrar estudiantes, materias y docentes.",
-    stack: ["Java", "Spark", "JDBC", "Mustache"],
-    img: "/proyecto_universidad.png",
-    link: "https://github.com/alejobonavia003/GestionUniversitaria",
+      "Pagina web de e-commerce desarrollada en Hostinguer, cree el backend.",
+    stack: ["wordpress", "woocomerce"],
+    img: "/imperiosur.png",
+    link: "https://imperiosur.com/",
     webLink: "En proceso",
+    bottonSite: "Ver sitio",
+    bottonGit: "Ver github",
   },
   {
     nombre: "Mantis Espacio Terapéutico",
@@ -16,6 +18,8 @@ const proyectos = [
     img: "/Mantis.png",
     link: "https://github.com/alejobonavia003/Mantis",
     webLink: "https://mantisespacioterapeutico.com/",
+    bottonSite: "Ver sitio",
+    bottonGit: "Ver github",
   },
 ];
 
@@ -37,9 +41,24 @@ export default function Proyectos() {
                   <span key={tech} className="bg-gray-700 text-xs px-2 py-1 rounded-md text-gray-300">{tech}</span>
                 ))}
               </div>
-              <a href={p.link} target="_blank" className="text-blue-500 hover:text-blue-400 text-sm">
-                Ver en GitHub →
-              </a>
+              <div className="flex justify-between items-center mt-4">
+                <a
+                  href={p.webLink}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="px-3 py-1 bg-blue-600 text-white text-sm rounded hover:bg-blue-500 transition"
+                >
+                  {p.bottonSite ?? p.bottonSite ?? 'Ver sitio'} →
+                </a>
+                <a
+                  href={p.link}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="px-3 py-1 border border-gray-600 text-blue-500 text-sm rounded hover:bg-gray-800 transition"
+                >
+                  {p.bottonGit ?? 'Ver github'} →
+                </a>
+              </div>
             </div>
           ))}
         </div>
