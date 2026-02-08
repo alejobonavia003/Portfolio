@@ -1,20 +1,20 @@
 const proyectos = [
   {
-    nombre: "ecomerce Imperio Sur",
+    nombre: "Backend API - Philips App",
     descripcion:
-      "Pagina web de e-commerce desarrollada en Hostinguer, cree el backend.",
-    stack: ["wordpress", "woocomerce"],
-    img: "/imperiosur.png",
-    link: "https://imperiosur.com/",
-    webLink: "En proceso",
-    bottonSite: "Ver sitio",
+      "API backend en Node.js y Express para gestión de finanzas y tareas. Diseño modular, documentación técnica y resolución de incidencias.",
+    stack: ["Node.js", "Express", "APIs REST"],
+    img: "/proyecto_universidad.png",
+    link: "https://github.com/alejobonavia003/philips-app",
+    webLink: "",
+    bottonSite: "Repositorio",
     bottonGit: "Ver github",
   },
   {
-    nombre: "Mantis Espacio Terapéutico",
+    nombre: "Mantis - Aplicación Full Stack",
     descripcion:
-      "Página web desarrollada con React + Node.js + Railway, enfocada en ofrecer información y servicios de bienestar.",
-    stack: ["React", "Node.js", "Express", "Railway"],
+      "Aplicación Full Stack (React + Express). Web de reservas de turnos y reseñas; deployment en Railway.",
+    stack: ["React", "Express", "Node.js", "Railway"],
     img: "/Mantis.png",
     link: "https://github.com/alejobonavia003/Mantis",
     webLink: "https://mantisespacioterapeutico.com/",
@@ -27,18 +27,29 @@ export default function Proyectos() {
   return (
     <section id="proyectos" className="py-20 bg-gray-950 text-gray-300 px-6">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-2xl font-bold text-white mb-8 text-center">Proyectos</h2>
+        <h2 className="section-title text-center">Proyectos</h2>
         <div className="grid sm:grid-cols-2 gap-10">
           {proyectos.map((p) => (
-            <div key={p.nombre} className="bg-gray-800/60 rounded-xl p-5 border border-gray-700 hover:border-blue-600 transition">
-              <img src={p.img} alt={p.nombre} className="rounded-md mb-4 w-full h-48 object-cover" />
+            <div key={p.nombre} className="project-card">
+              <img src={p.img} alt={p.nombre} className="project-card-img" />
               <h3 className="text-lg font-semibold text-white">
-                <a href={p.webLink} target="_blank" className="hover:text-blue-400 transition">{p.nombre}</a>
+                <a
+                  href={p.webLink}
+                  target="_blank"
+                  className="hover:text-blue-400 transition"
+                >
+                  {p.nombre}
+                </a>
               </h3>
               <p className="text-gray-400 text-sm mt-2 mb-3">{p.descripcion}</p>
               <div className="flex flex-wrap gap-2 mb-3">
                 {p.stack.map((tech) => (
-                  <span key={tech} className="bg-gray-700 text-xs px-2 py-1 rounded-md text-gray-300">{tech}</span>
+                  <span
+                    key={tech}
+                    className="bg-gray-700 text-xs px-2 py-1 rounded-md text-gray-300"
+                  >
+                    {tech}
+                  </span>
                 ))}
               </div>
               <div className="flex justify-between items-center mt-4">
@@ -48,7 +59,7 @@ export default function Proyectos() {
                   rel="noreferrer"
                   className="px-3 py-1 bg-blue-600 text-white text-sm rounded hover:bg-blue-500 transition"
                 >
-                  {p.bottonSite ?? p.bottonSite ?? 'Ver sitio'} →
+                  {p.bottonSite ?? p.bottonSite ?? "Ver sitio"} →
                 </a>
                 <a
                   href={p.link}
@@ -56,7 +67,7 @@ export default function Proyectos() {
                   rel="noreferrer"
                   className="px-3 py-1 border border-gray-600 text-blue-500 text-sm rounded hover:bg-gray-800 transition"
                 >
-                  {p.bottonGit ?? 'Ver github'} →
+                  {p.bottonGit ?? "Ver github"} →
                 </a>
               </div>
             </div>

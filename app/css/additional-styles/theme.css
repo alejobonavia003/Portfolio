@@ -5,89 +5,127 @@
 
 /* Custom AOS animations */
 [data-aos="zoom-y-out"] {
-transform: scaleX(1.03);
-opacity: 0;
-transition-property: transform, opacity;
+  transform: scaleX(1.03);
+  opacity: 0;
+  transition-property: transform, opacity;
 }
 
 @media screen {
-  html:not(.no-js) body [data-aos=fade-up] {
-      -webkit-transform: translate3d(0, 10px, 0);
-      transform: translate3d(0, 10px, 0);
+  html:not(.no-js) body [data-aos="fade-up"] {
+    -webkit-transform: translate3d(0, 10px, 0);
+    transform: translate3d(0, 10px, 0);
   }
 
-  html:not(.no-js) body [data-aos=fade-down] {
-      -webkit-transform: translate3d(0, -10px, 0);
-      transform: translate3d(0, -10px, 0);
+  html:not(.no-js) body [data-aos="fade-down"] {
+    -webkit-transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0);
   }
 
-  html:not(.no-js) body [data-aos=fade-right] {
-      -webkit-transform: translate3d(-10px, 0, 0);
-      transform: translate3d(-10px, 0, 0);
+  html:not(.no-js) body [data-aos="fade-right"] {
+    -webkit-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0);
   }
 
-  html:not(.no-js) body [data-aos=fade-left] {
-      -webkit-transform: translate3d(10px, 0, 0);
-      transform: translate3d(10px, 0, 0);
+  html:not(.no-js) body [data-aos="fade-left"] {
+    -webkit-transform: translate3d(10px, 0, 0);
+    transform: translate3d(10px, 0, 0);
   }
 
-  html:not(.no-js) body [data-aos=fade-up-right] {
-      -webkit-transform: translate3d(-10px, 10px, 0);
-      transform: translate3d(-10px, 10px, 0);
+  html:not(.no-js) body [data-aos="fade-up-right"] {
+    -webkit-transform: translate3d(-10px, 10px, 0);
+    transform: translate3d(-10px, 10px, 0);
   }
 
-  html:not(.no-js) body [data-aos=fade-up-left] {
-      -webkit-transform: translate3d(10px, 10px, 0);
-      transform: translate3d(10px, 10px, 0);
+  html:not(.no-js) body [data-aos="fade-up-left"] {
+    -webkit-transform: translate3d(10px, 10px, 0);
+    transform: translate3d(10px, 10px, 0);
   }
 
-  html:not(.no-js) body [data-aos=fade-down-right] {
-      -webkit-transform: translate3d(-10px, -10px, 0);
-      transform: translate3d(-10px, -10px, 0);
+  html:not(.no-js) body [data-aos="fade-down-right"] {
+    -webkit-transform: translate3d(-10px, -10px, 0);
+    transform: translate3d(-10px, -10px, 0);
   }
 
-  html:not(.no-js) body [data-aos=fade-down-left] {
-      -webkit-transform: translate3d(10px, -10px, 0);
-      transform: translate3d(10px, -10px, 0);
+  html:not(.no-js) body [data-aos="fade-down-left"] {
+    -webkit-transform: translate3d(10px, -10px, 0);
+    transform: translate3d(10px, -10px, 0);
   }
 
-  html:not(.no-js) body [data-aos=zoom-in-up] {
-      -webkit-transform: translate3d(0, 10px, 0) scale(.6);
-      transform: translate3d(0, 10px, 0) scale(.6);
+  html:not(.no-js) body [data-aos="zoom-in-up"] {
+    -webkit-transform: translate3d(0, 10px, 0) scale(0.6);
+    transform: translate3d(0, 10px, 0) scale(0.6);
   }
 
-  html:not(.no-js) body [data-aos=zoom-in-down] {
-      -webkit-transform: translate3d(0, -10px, 0) scale(.6);
-      transform: translate3d(0, -10px, 0) scale(.6);
+  html:not(.no-js) body [data-aos="zoom-in-down"] {
+    -webkit-transform: translate3d(0, -10px, 0) scale(0.6);
+    transform: translate3d(0, -10px, 0) scale(0.6);
   }
 
-  html:not(.no-js) body [data-aos=zoom-in-right] {
-      -webkit-transform: translate3d(-10px, 0, 0) scale(.6);
-      transform: translate3d(-10px, 0, 0) scale(.6);
+  html:not(.no-js) body [data-aos="zoom-in-right"] {
+    -webkit-transform: translate3d(-10px, 0, 0) scale(0.6);
+    transform: translate3d(-10px, 0, 0) scale(0.6);
   }
 
-  html:not(.no-js) body [data-aos=zoom-in-left] {
-      -webkit-transform: translate3d(10px, 0, 0) scale(.6);
-      transform: translate3d(10px, 0, 0) scale(.6);
+  html:not(.no-js) body [data-aos="zoom-in-left"] {
+    -webkit-transform: translate3d(10px, 0, 0) scale(0.6);
+    transform: translate3d(10px, 0, 0) scale(0.6);
   }
 
-  html:not(.no-js) body [data-aos=zoom-out-up] {
-      -webkit-transform: translate3d(0, 10px, 0) scale(1.2);
-      transform: translate3d(0, 10px, 0) scale(1.2);
+  html:not(.no-js) body [data-aos="zoom-out-up"] {
+    -webkit-transform: translate3d(0, 10px, 0) scale(1.2);
+    transform: translate3d(0, 10px, 0) scale(1.2);
   }
 
-  html:not(.no-js) body [data-aos=zoom-out-down] {
-      -webkit-transform: translate3d(0, -10px, 0) scale(1.2);
-      transform: translate3d(0, -10px, 0) scale(1.2);
+  html:not(.no-js) body [data-aos="zoom-out-down"] {
+    -webkit-transform: translate3d(0, -10px, 0) scale(1.2);
+    transform: translate3d(0, -10px, 0) scale(1.2);
   }
 
-  html:not(.no-js) body [data-aos=zoom-out-right] {
-      -webkit-transform: translate3d(-10px, 0, 0) scale(1.2);
-      transform: translate3d(-10px, 0, 0) scale(1.2);
+  html:not(.no-js) body [data-aos="zoom-out-right"] {
+    -webkit-transform: translate3d(-10px, 0, 0) scale(1.2);
+    transform: translate3d(-10px, 0, 0) scale(1.2);
   }
 
-  html:not(.no-js) body [data-aos=zoom-out-left] {
-      -webkit-transform: translate3d(10px, 0, 0) scale(1.2);
-      transform: translate3d(10px, 0, 0) scale(1.2);
+  html:not(.no-js) body [data-aos="zoom-out-left"] {
+    -webkit-transform: translate3d(10px, 0, 0) scale(1.2);
+    transform: translate3d(10px, 0, 0) scale(1.2);
   }
+}
+
+/* Custom CV styles */
+.section-title {
+  @apply text-2xl font-bold text-white mb-6;
+}
+
+.cv-badge {
+  @apply inline-block bg-blue-600 text-white text-xs px-2 py-1 rounded-md;
+}
+
+.cv-btn {
+  @apply px-5 py-2 rounded-md text-sm font-medium shadow transition;
+}
+
+.cv-btn-primary {
+  @apply bg-blue-600 hover:bg-blue-700 text-white;
+}
+
+.cv-btn-ghost {
+  @apply bg-gray-800 hover:bg-gray-700 text-gray-100;
+}
+
+.cv-btn-download {
+  @apply bg-green-600 hover:bg-green-700 text-white;
+}
+
+.profile-summary {
+  @apply text-gray-400 max-w-2xl mx-auto mb-8;
+}
+
+.skill-card {
+  @apply bg-gray-800/50 rounded-xl p-5 border border-gray-700 hover:border-blue-600 transition;
+}
+
+.project-card img,
+.project-card-img {
+  @apply rounded-md mb-4 w-full h-48 object-cover;
 }
