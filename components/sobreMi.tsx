@@ -6,12 +6,8 @@ export default function SobreMi() {
 
         <div className="space-y-4 text-gray-400 leading-relaxed">
           <p>
-            Estudiante de 3er año de Ciencias de la Computación con base técnica
-            en desarrollo de software y sistemas. Experiencia en análisis de
-            requerimientos, resolución de problemas técnicos y trabajo con
-            aplicaciones backend y full stack. Capacidad para adaptarme a
-            distintos entornos IT, aprender nuevas herramientas rápidamente y
-            trabajar con foco en procesos y mejora continua.
+            Estudiante de 3er año de Ciencias de la Computación con base en
+            desarrollo de software y sistemas.
           </p>
         </div>
       </div>

@@ -27,11 +27,7 @@ export default function Inicio() {
           Estudiante de Ciencias de la Computación • Perfil IT Junior
         </p>
         <p className="text-gray-400 max-w-2xl mx-auto mb-8">
-          Estudiante de 3er año con base técnica en desarrollo de software y
-          sistemas. Experiencia en análisis de requerimientos, resolución de
-          problemas técnicos y trabajo con aplicaciones backend y full stack.
-          Capacidad para adaptarme a distintos entornos IT y aprender nuevas
-          herramientas rápidamente.
+          Estudiante de 3er año con base en desarrollo de software y sistemas.
         </p>
         <div className="flex gap-4 justify-center">
           <a
