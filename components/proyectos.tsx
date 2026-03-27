@@ -1,3 +1,6 @@
+"use client";
+import { useState } from "react";
+
 const proyectos = [
   {
     nombre:
@@ -31,8 +34,6 @@ const proyectos = [
   },
 ];
 
-import { useState } from 'react';
-
 export default function Proyectos() {
   return (
     <section id="proyectos" className="py-20 bg-gray-950 text-gray-300 px-6">
@@ -42,17 +43,35 @@ export default function Proyectos() {
           {proyectos.map((p) => {
             const [currentImageIndex, setCurrentImageIndex] = useState(0);
             const gallery = p.gallery || [p.img];
-            const nextImage = () => setCurrentImageIndex((prev) => (prev + 1) % gallery.length);
-            const prevImage = () => setCurrentImageIndex((prev) => (prev - 1 + gallery.length) % gallery.length);
+            const nextImage = () =>
+              setCurrentImageIndex((prev) => (prev + 1) % gallery.length);
+            const prevImage = () =>
+              setCurrentImageIndex(
+                (prev) => (prev - 1 + gallery.length) % gallery.length,
+              );
 
             return (
               <div key={p.nombre} className="project-card">
                 <div className="relative">
-                  <img src={gallery[currentImageIndex]} alt={p.nombre} className="project-card-img" />
+                  <img
+                    src={gallery[currentImageIndex]}
+                    alt={p.nombre}
+                    className="project-card-img"
+                  />
                   {gallery.length > 1 && (
                     <>
-                      <button onClick={prevImage} className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-1 rounded">‹</button>
-                      <button onClick={nextImage} className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-1 rounded">›</button>
+                      <button
+                        onClick={prevImage}
+                        className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-1 rounded"
+                      >
+                        ‹
+                      </button>
+                      <button
+                        onClick={nextImage}
+                        className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-1 rounded"
+                      >
+                        ›
+                      </button>
                     </>
                   )}
                 </div>
@@ -65,7 +84,9 @@ export default function Proyectos() {
                     {p.nombre}
                   </a>
                 </h3>
-                <p className="text-gray-400 text-sm mt-2 mb-3">{p.descripcion}</p>
+                <p className="text-gray-400 text-sm mt-2 mb-3">
+                  {p.descripcion}
+                </p>
                 <div className="flex flex-wrap gap-2 mb-3">
                   {p.stack.map((tech) => (
                     <span
