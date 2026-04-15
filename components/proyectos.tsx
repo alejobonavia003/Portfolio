@@ -17,7 +17,7 @@ const proyectos = [
       "/quelomitosimages/panel del deliveri.png",
     ],
     link: "https://github.com/alejobonavia003/QueLomitosSystem",
-    webLink: "",
+    webLink: "https://github.com/alejobonavia003/QueLomitosSystem",
     bottonSite: "Repositorio",
     bottonGit: "Ver github",
   },
