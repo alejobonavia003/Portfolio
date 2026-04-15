@@ -28,7 +28,7 @@ const proyectos = [
     stack: ["React", "Express", "Node.js", "Railway"],
     img: "/Mantis.png",
     link: "https://github.com/alejobonavia003/Mantis",
-    webLink: "https://mantisespacioterapeutico.com/",
+    webLink: "",
     bottonSite: "Ver sitio",
     bottonGit: "Ver github",
   },
