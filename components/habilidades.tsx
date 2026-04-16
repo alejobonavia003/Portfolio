@@ -14,19 +14,20 @@ const habilidades = {
 
 export default function Habilidades() {
   return (
-    <section id="habilidades" className="py-20 bg-gray-900 text-gray-200 px-6">
-      <div className="max-w-5xl mx-auto">
+    <section id="habilidades" className="py-24 bg-[#0a0a0a] text-[#e5e5e5] px-6">
+      <div className="max-w-4xl mx-auto">
         <h2 className="section-title text-center">Habilidades</h2>
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
           {Object.entries(habilidades).map(([categoria, items]) => (
             <div key={categoria} className="skill-card">
-              <h3 className="font-semibold text-lg text-white mb-3">
+              <h3 className="font-semibold text-lg text-[#e5e5e5] mb-4">
                 {categoria}
               </h3>
-              <ul className="space-y-1 text-sm">
+              <ul className="space-y-2 text-sm">
                 {items.map((hab) => (
-                  <li key={hab} className="text-gray-400">
-                    • {hab}
+                  <li key={hab} className="text-[#9ca3af]">
+                    <span className="text-green-500 mr-2">▸</span>
+                    {hab}
                   </li>
                 ))}
               </ul>

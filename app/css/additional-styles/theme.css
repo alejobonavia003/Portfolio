@@ -1,6 +1,6 @@
 /* Scrollspy links */
 [data-scrollspy-link].scrollspy-active {
-  @apply text-blue-500 font-medium;
+  @apply text-green-500 font-medium;
 }
 
 /* Custom AOS animations */
@@ -94,11 +94,11 @@
 
 /* Custom CV styles */
 .section-title {
-  @apply text-2xl font-bold text-white mb-6;
+  @apply text-4xl font-bold text-[#e5e5e5] mb-8;
 }
 
 .cv-badge {
-  @apply inline-block bg-blue-600 text-white text-xs px-2 py-1 rounded-md;
+  @apply inline-block bg-green-500 text-[#0a0a0a] text-xs px-3 py-1 rounded-md font-medium;
 }
 
 .cv-btn {
@@ -106,26 +106,30 @@
 }
 
 .cv-btn-primary {
-  @apply bg-blue-600 hover:bg-blue-700 text-white;
+  @apply bg-green-500 hover:bg-green-600 text-[#0a0a0a] font-medium;
 }
 
 .cv-btn-ghost {
-  @apply bg-gray-800 hover:bg-gray-700 text-gray-100;
+  @apply bg-[#111111] hover:bg-[#1a1a1a] text-[#e5e5e5] border border-[#222222];
 }
 
 .cv-btn-download {
-  @apply bg-green-600 hover:bg-green-700 text-white;
+  @apply bg-green-500 hover:bg-green-600 text-[#0a0a0a] font-medium;
 }
 
 .profile-summary {
-  @apply text-gray-400 max-w-2xl mx-auto mb-8;
+  @apply text-[#9ca3af] max-w-2xl mx-auto mb-8;
 }
 
 .skill-card {
-  @apply bg-gray-800/50 rounded-xl p-5 border border-gray-700 hover:border-blue-600 transition;
+  @apply bg-[#111111] rounded-lg p-6 border border-[#222222] hover:border-green-500/50 transition;
+}
+
+.project-card {
+  @apply bg-[#111111] rounded-lg overflow-hidden border border-[#222222] hover:border-green-500/50 transition;
 }
 
 .project-card img,
 .project-card-img {
-  @apply rounded-md mb-4 w-full h-48 object-cover;
+  @apply rounded-t-lg mb-0 w-full h-48 object-cover;
 }

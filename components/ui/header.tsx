@@ -5,39 +5,39 @@ import Image from "next/image";
 export default function Header() {
   return (
     <header className="fixed top-3 z-30 w-full md:top-6">
-      <div className="mx-auto max-w-6xl px-4 sm:px-6">
-        <div className="relative flex h-14 items-center justify-between gap-3 rounded-2xl bg-gray-900/80 px-4 shadow-lg backdrop-blur-md border border-gray-800">
+      <div className="mx-auto max-w-4xl px-4 sm:px-6">
+        <div className="relative flex h-14 items-center justify-between gap-3 rounded-lg bg-[#111111]/80 px-4 shadow-lg backdrop-blur-md border border-[#222222]">
           {/* Branding */}
           <div className="flex items-center gap-3">
             <Image
-              src="/alejo.jpg" // reemplazá por el nombre exacto de tu foto en public
+              src="/alejo.jpg"
               alt="Alejo Bonavia"
               width={36}
               height={36}
-              className="rounded-full border border-gray-700"
+              className="rounded-full border border-green-500/30"
             />
-            <span className="text-gray-200 font-semibold tracking-wide">
+            <span className="text-[#e5e5e5] font-semibold tracking-wide text-sm md:text-base">
               Alejo Bonavia
             </span>
           </div>
 
           {/* Navegación */}
-          <nav className="hidden md:flex gap-6">
+          <nav className="hidden md:flex gap-8">
             <a
               href="#sobre-mi"
-              className="text-gray-400 hover:text-white transition-colors"
+              className="text-[#9ca3af] hover:text-green-500 transition-colors text-sm"
             >
               Sobre mí
             </a>
             <a
               href="#proyectos"
-              className="text-gray-400 hover:text-white transition-colors"
+              className="text-[#9ca3af] hover:text-green-500 transition-colors text-sm"
             >
               Proyectos
             </a>
             <a
               href="#contacto"
-              className="text-gray-400 hover:text-white transition-colors"
+              className="text-[#9ca3af] hover:text-green-500 transition-colors text-sm"
             >
               Contacto
             </a>
